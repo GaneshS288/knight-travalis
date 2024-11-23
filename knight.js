@@ -17,9 +17,9 @@ function getAllMoves(x, y) {
     [x + 2, y - 1],
     [x + 2, y + 1],
   ];
-  //filter the illegal moves by checking if coordinates exceed 8 or go below 0
+  //filter the illegal moves by checking if coordinates exceed 7 or go below 0
   moveArray = moveArray.filter((item) => {
-    if (item[0] > 8 || item[0] < 0 || item[1] > 8 || item[1] < 0) return false;
+    if (item[0] > 7 || item[0] < 0 || item[1] > 7 || item[1] < 0) return false;
     else return true;
   });
 
